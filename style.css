@@ -129,12 +129,3 @@ article {
     text-decoration: none;
 }
 
-p #copyright a {
-    text-decoration: none;
-    color: black;
-}
-
-p #copyright a:hover {
-    color: #fa591a;
-    text-decoration: none;
-}
