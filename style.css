@@ -119,13 +119,22 @@ article {
     padding-top: 2em;
 }
 
-#copyright  {
+#copyright a {
     text-decoration: none;
     color: black;
 }
 
-#copyright:hover {
+#copyright a:hover {
     color: #fa591a;
     text-decoration: none;
 }
 
+p #copyright a {
+    text-decoration: none;
+    color: black;
+}
+
+p #copyright a:hover {
+    color: #fa591a;
+    text-decoration: none;
+}
