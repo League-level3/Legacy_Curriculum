@@ -229,7 +229,7 @@ questions[24].choices[3] = "To run multiple sections of code simultaneously.<br>
 questions[24].choices[4] = "There is no purpose.<br>";
 questions[24].correctAnswer = 3;
 questions[25] = new Question();
-questions[25].question = "class<br>interface<br>method<br>variable<br>abstract class<br><br>1<br>What is the value of x after the following code executes?<br><br>static int x = 0;<br>public static void main(String[] args) {	<br>	Thread t1 = new Thread(new Runnable(){<br>		@Override<br>		public void run() {<br>			for(int i = 0; i &lt 5; i++){<br>				x += i;<br>			}	<br>		}<br>	});<br>	<br>	t1.start();<br>	try {<br>		t1.join();<br>	} catch (InterruptedException e) {<br>		e.printStackTrace();<br>	}<br>}<br><br>";
+questions[25].question = "What is the value of x after the following code executes?<br><br>static int x = 0;<br>public static void main(String[] args) {	<br>	Thread t1 = new Thread(new Runnable(){<br>		@Override<br>		public void run() {<br>			for(int i = 0; i &lt 5; i++){<br>				x += i;<br>			}	<br>		}<br>	});<br>	<br>	t1.start();<br>	try {<br>		t1.join();<br>	} catch (InterruptedException e) {<br>		e.printStackTrace();<br>	}<br>}<br><br>";
 questions[25].choices[0] = "0<br>";
 questions[25].choices[1] = "10<br>";
 questions[25].choices[2] = "25<br>";
