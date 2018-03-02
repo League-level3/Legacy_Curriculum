@@ -339,7 +339,7 @@ questions[28].correctAnswer = 3;
 questions[29] = new Question();
 questions[29].question = "How many threads (including the main thread) are running simultaneously at the end of the following code segment?<br><br>"+
 "for(int i = 0; i < 10; i++){<br>"+
-	"\tnew Thread(new Runnnable(){<br>"+
+	"\tnew Thread(new Runnable(){<br>"+
   "\t\tpublic void run(){<br>" +
 		"\t\t\tfor(int i = 0; i < 1000000; i++){<br>"+
 			"\t\t\t\tSystem.out.println(i);<br>"+
