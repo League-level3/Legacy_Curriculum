@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<title>Level 3- HashMap</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://league-level0.github.io/style.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+
+
+<body>
+
+<h1>Level 3 - HashMap</h1>
+
+<p class="normal">
+The <font color="green">HashMap</font> class allows you to store information (a value) that can be retrieved using its "key". Each key in a HashMap is unique.</p>
+
+    <p class="normal">
+        An example of when a HashMap could be used is in a school. There may be more than one student with the same name, but each student is given a unique ID number that allows you to find the correct student. In this case, the HashMap "keys" are ID numbers, and the "values" are Student records (objects). See below:
+    </p>
+
+    <p class="code">
+    Student s1 = new Student("Sarah", 123);<br>
+    Student s2 = new Student("Sarah", 555);<br>
+    Student s3 = new Student("Joe", 345);<br><br>
+    HashMap&lt;Integer, Student&gt;  students = new HashMap();<br>
+    students.put(s1.ID, s1);<br>
+	students.put(s2.ID, s2);<br>
+	students.put(s3.ID,s3);<br>
+        <br>
+    String student = students.get(555);   //student will be Sarah with ID 555
+        
+</p>
+    
+
+    
+             <h2>Sample Program</h2>
+    <p align="center">
+    How to add elements to a HashMap<br>
+    How to retrieve one element from a HashMap using its key<br>
+    How to access all the keys of a HashMap<br>
+    How to access all the values of a HashMap<br>
+    
+    <h2>Student Recipes</h2>
+ 
+    <h3>IntroToHashMaps</h3>
+     <h3>LogSearch</h3> 
+    
+<br><br><br><br><br>    
+ <script src="https://league-level0.github.io/copyright.js"></script>
+
+</body></html>
