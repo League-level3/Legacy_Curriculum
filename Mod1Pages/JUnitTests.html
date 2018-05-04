@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<title>Level 3- JUnit Tests and Algorithms</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://league-level0.github.io/style.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+
+    
+<script src="http://league-level0.github.io/copyrightFooter.js"></script>
+
+<body>
+
+<h1>JUnit Tests</h1>
+
+<p class="normal">
+When you have written a new program, you need to test if it is working properly. Also, if you need to make changes to an existing program, you need to make sure you haven't broken anything that worked before.</p> 
+   <p class="normal"> 
+    When we develop new code, we sometimes add print statements to check what is happening, but after we have done that we need to remove the print statements, and that changes the program. So how can we test a program without changing it?</p>
+
+   <p class="normal">JUnit provides us with a framework to test our code "from the outside". <a href="https://www.tutorialspoint.com/junit/junit_overview.htm">Overview of JUnit</a></p>
+    
+    <p class="normal">For example, if we write a static method in an Algorithms class that is designed to add 2 numbers and return the sum, a JUnit test can be written to call that method, pass it 2 numbers and check the result against the expected answer. This test is not part of the Algorithms class, but an external testing class, and might appear as follows:</p>
+        
+    <p class="code">
+    @Test<br>
+	public void testAdd() {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;assertEquals(4, Algorithms.add(3,1));<br>
+	}
+    </p>
+    
+    <p class="normal">We can use a variety of <a href="https://www.tutorialspoint.com/junit/junit_using_assertion.htm">assertions</a> that allow the program to test for different conditions. In the above example, the code is testing for the "equals" condition.</p>
+    
+    <p class="normal">If a programmer later changes the Algorithms class for any reason, we can re-run this test to see if the add() method still works correctly.</p>
+   
+  <h1>Algorithms</h1>
+<p class="normal">An algorithm is a detailed, step-by-step set of instructions that solves a problem or completes a defined task. One use of algorithms is to process information contained in data structures (e.g. ArrayLists). An example of such an algorithm is a bubble sort. What is a <a href="https://mathbits.com/MathBits/Java/arrays/Bubble.htm">Bubble Sort</a>?
+</p>    
+    
+    
+    
+    <p align="center"> <b>Things to find out before you finish this module:</b></p>
+    
+    <p class="normal">
+<li>The purpose of a JUnitTest</li><br>
+<li>The function of assertEquals, assertTrue, assertFalse</li><br>
+<li>How to create a JUnitTest</li><br>
+<li>How to identify the requirements to make a JUnitTest pass</li><br>
+<li>What is an algorithm?</li><br>
+<li>How to code a basic sort program (i.e. bubble sort)</li>
+    </p>
+    <div style="float: left; width: 50%;">
+    
+           <h2>Sample Program</h2>
+        <p align="center"> <b>IntroToJUnitTest<br>
+            MoreAndMoreTests<br></b></p>
+    </div>
+    
+     <div style="float: left; width: 50%;">
+    <h2>Student Recipes</h2>
+
+   <p align="center"> <b>
+       Algorithms<br>
+         SearchingAndSortingAlgorithms</b></p>
+       
+      </div>
+         
+   
+<br><br>
+ <div id="copyright" style="float: left; width: 100%;">      
+        <script>copyright();</script>
+    </div>
+ 
+   
+</body></html>
